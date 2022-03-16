@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
+*,::before,::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'lato', sans-serif;
+}
+:root{
+    --link-size: 1.2rem;
+    --link-color: #333;
+    --link-decoration: none;    
+    --title-color:#111;
+    --border-color:#333;
+    --text-break: break-all;
+    --text-size: 1rem;
+    --aside-w-blocs: 90%;
+    --aside-h-blocs: 150px;
+    --size-w-logo: 130px;
+    --size-h-logo: 80px;
+    --bold-custom: bold;
+}
+
+/* navigate bar*/
+header{
+    height: 100px;
+}
+header .navbar{
+    position: fixed; 
+    display: flex;
+    flex-wrap: wrap;    
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    z-index: 999;
+    border-bottom: solid 2px var(--border-color);
+    background: #fff;
+}
+header .navbar img{
+    width: var(--size-w-logo);
+    height: var(--size-h-logo);
+    cursor: pointer;
+    margin: 3px 0 3px 3px;
+}
+header .navbar a{
+    text-decoration: var(--link-decoration);
+    color: var(--link-color);
+    margin-right: 50px;
+    font-size: var(--link-size);
+    font-weight: var(--bold-custom)
+}
+
+/* main page */
+main article .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 75%;
+    height: auto;
+    margin-bottom: 100px;
+    border: solid 1px var(--border-color);
+}
+main article .container .bloc{
+    
+    height: 200px;
+    margin: 5px;
+    padding-top: 50px;
+    border-radius: 45px;
+    cursor: pointer;
+    word-break: var(--text-break);
+    border: solid 1px var(--border-color);
+}
+main article .container .bloc p,h2{
+    text-align: center;
+    background-color: transparent;
+    margin-left: 10%;
+    margin-right: 10%;
+    font-weight: var(--bold-custom);
+}
+main article .container .bloc p{
+        font-size: var(--text-size);
+}
+
+/* aside*/
+main aside{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 25%;
+    height: 100%;
+    top: 100px;
+    left: 75%;
+    /* border: solid 1px var(--border-color);  */
+}
+main aside .link_ancre{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: var(--aside-w-blocs); 
+    height: var(--aside-h-blocs);       
+    margin: 20px;
+    padding-top: 35px;
+    border-top-right-radius: 45px;
+    border: solid 1px var(--border-color);
+    
+}
+main aside .link_ancre a{
+    text-decoration: var(--link-decoration);
+    color: var(--link-color);
+    font-weight: var(--bold-custom);
+}
+main aside .computer{
+    display: flex;
+    flex-direction: column;
+    width: var(--aside-w-blocs);
+    border-top-right-radius: 45px;
+    border: solid 1px var(--border-color);
+}
+main aside .computer img{
+    height:var(--aside-h-blocs);
+    border-top-right-radius: 45px;
+}
+main aside form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: var(--aside-w-blocs);
+    height: var(--aside-h-blocs);    
+    margin: 10px;
+    padding: 20px;
+    border-top-right-radius: 45px;
+    border: solid 1px var(--border-color);
+}
+main aside form .send{
+    margin: 0px;    
+    padding-top: 25px;
+}
+
+main aside form .send input{
+    width: 100%;
+}
+main aside form div button a{
+    text-decoration: var(--link-decoration);
+    color: var(--link-color);
+}
+
+/* footer*/
+footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    border-top: solid 2px var(--border-color);
+    background:#fff;
+}
+footer .footer_link{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    align-items: center;
+    margin-top: 3px;
+}
+footer .footer_link img{
+    width: var(--size-w-logo);
+    height: var(--size-h-logo);
+}
+footer .footer_link a{
+    text-decoration: var(--link-decoration);    
+    margin: 5px;
+    color: var(--link-color);
+    font-weight: var(--bold-custom);
+}
+footer .footer_link span{
+    color: var(--link-color);
+}
+footer p{
+    text-align: center;
+}
