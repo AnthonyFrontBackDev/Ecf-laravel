@@ -16,6 +16,8 @@ class MainController extends Controller
     {
         $articles = Article::all();
 
-        return view('accueil', [ 'articles' => $articles]);
+        return view('accueil',[
+             'articles' => $articles
+        ]);
     }
 }

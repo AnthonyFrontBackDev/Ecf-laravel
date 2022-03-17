@@ -11,5 +11,8 @@ Route::get('/', [MainController::class, 'accueil'])->name('accueil'); // execute
 
 Auth::routes(); // Routes de création de compte , connexion de compte / (package laravel ui)
 
-Route::post('/accueil', [ArticleController::class, 'store'])->name('accueil');
-Route::get('/accueil', [App\Http\Controllers\HomeController::class, 'index'])->name('accueil');
+Route::post('/', [ArticleController::class, 'create'])->name('accueil');
+Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('accueil');
+
+
+Route::get('/', [MainController::class, 'articles']);

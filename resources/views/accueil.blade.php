@@ -4,14 +4,14 @@
 <main>
         <article>
             <section class="container">
-                {{-- @foreach ($articles as $article )
+                @foreach ($articles as $article )
                     <article>
                         <div class="bloc">
                             <h1>{{ $article->title }}</h1>
                             <p>{{ $article->content }}</p>
                         </div>
                     </article>
-                @endforeach --}}
+                @endforeach
                 <article>
                     <div class="bloc ">
                         <h2>Article 1</h2>

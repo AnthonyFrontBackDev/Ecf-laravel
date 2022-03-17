@@ -22,9 +22,14 @@ class ArticleController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function create()
+    public function create(Request $request)
     {
-        //
+        Article::create([
+            'title' => $request->input('title'),
+            'content' => $request->input('content')
+
+        ]);
+        return back();
     }
 
     /**
@@ -35,11 +40,8 @@ class ArticleController extends Controller
      */
     public function store(Request $request)
     {
-        Article::create([
-            'title' => $request->input('title'),
-            'content' => $request->input('content')
-        ]);
-        return back();
+        //
+        // 
     }
 
     /**
